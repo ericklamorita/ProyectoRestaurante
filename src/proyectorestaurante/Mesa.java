@@ -1,6 +1,5 @@
 package proyectorestaurante;
 
-
 public class Mesa {
     private int numero;
     private boolean disponible;

@@ -1,11 +1,5 @@
 package proyectorestaurante;
 
-
-
-
-
-
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -41,10 +35,15 @@ public class MenuService {
         String descripcion = scanner.nextLine();
         System.out.print("Precio del Platillo: ");
         double precio = scanner.nextDouble();
+        scanner.nextLine(); // Consumir nueva línea
 
         Platillo nuevoPlatillo = new Platillo(nombre, descripcion, precio);
         menu.add(nuevoPlatillo);
         System.out.println("Platillo anadido exitosamente.");
+    }
+
+    public List<Platillo> obtenerMenu() {
+        return menu;
     }
 
     private void mostrarMenu() {

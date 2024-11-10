@@ -1,7 +1,6 @@
 package proyectorestaurante;
 
 import java.util.ArrayList;
-
 import java.util.List;
 
 public class Pedido {
@@ -11,6 +10,11 @@ public class Pedido {
 
     public Pedido(int numeroMesa) {
         this.numeroMesa = numeroMesa;
+    }
+
+    // Getter para obtener el número de la mesa
+    public int getNumeroMesa() {
+        return numeroMesa;
     }
 
     public void agregarPlatillo(Platillo platillo) {
