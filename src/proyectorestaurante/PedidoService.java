@@ -48,7 +48,7 @@ public class PedidoService {
         } while (opcion != 4);
     }
 
-    // 1. Escoger mesa: Reservar mesa y tomar pedido
+    // Escoger las mesas, tomar pedido y mostrar tambien los recivos 
     private void escogerMesa() {
         System.out.print("Ingrese el numero de la mesa: ");
         int numeroMesa = scanner.nextInt();
@@ -82,7 +82,7 @@ public class PedidoService {
         }
     }
 
-    // 2. Seleccionar mesa y mostrar su recibo
+    // Seleccionar la mesa y mostrar su recibo
     private void seleccionarMesa() {
         System.out.print("Ingrese el numero de la mesa: ");
         int numeroMesa = scanner.nextInt();
@@ -101,11 +101,11 @@ public class PedidoService {
         }
     }
 
-    // 3. Eliminar mesa: Liberar mesa
+    // Eliminar mesa
     private void eliminarMesa() {
         System.out.print("Ingrese el numero de la mesa a liberar: ");
         int numeroMesa = scanner.nextInt();
-        scanner.nextLine(); // Limpiar buffer
+        scanner.nextLine(); 
 
         Mesa mesa = buscarMesa(numeroMesa);
         if (mesa != null && !mesa.isDisponible()) {
@@ -116,12 +116,12 @@ public class PedidoService {
         }
     }
 
-    // Buscar una mesa por número
+    // Buscar las mesas por número
     private Mesa buscarMesa(int numero) {
         return mesas.stream().filter(m -> m.getNumero() == numero).findFirst().orElse(null);
     }
 
-    // Buscar un pedido por número de mesa
+    // Buscar los pedido por número de mesa
     private Pedido buscarPedido(int numeroMesa) {
         return pedidos.stream().filter(p -> p.getNumeroMesa() == numeroMesa).findFirst().orElse(null);
     }
