@@ -1,5 +1,6 @@
-package proyectorestaurante;
+package ServicioCocina;
 
+import GestionTrabajador.GestionTrabajadores;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;

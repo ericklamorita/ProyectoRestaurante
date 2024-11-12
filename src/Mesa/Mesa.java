@@ -1,4 +1,4 @@
-package proyectorestaurante;
+package Mesa;
 
 public class Mesa {
     private int numero;

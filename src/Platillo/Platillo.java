@@ -1,4 +1,4 @@
-package proyectorestaurante;
+package Platillo;
 
 public class Platillo {
     private String nombre;

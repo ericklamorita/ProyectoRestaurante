@@ -1,5 +1,6 @@
-package proyectorestaurante;
+package Pedido;
 
+import Platillo.Platillo;
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,5 +1,9 @@
-package proyectorestaurante;
+package PedidoService;
 
+import MenuService.MenuService;
+import Mesa.Mesa;
+import Pedido.Pedido;
+import Platillo.Platillo;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;

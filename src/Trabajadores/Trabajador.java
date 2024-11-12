@@ -1,4 +1,4 @@
-package proyectorestaurante;
+package Trabajadores;
 
 public class Trabajador {
     private int id;

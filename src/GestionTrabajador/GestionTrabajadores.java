@@ -1,5 +1,6 @@
-package proyectorestaurante;
+package GestionTrabajador;
 
+import Trabajadores.Trabajador;
 import java.util.ArrayList;
 import java.util.List;
 
