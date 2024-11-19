@@ -21,8 +21,8 @@ public class Servicio_de_cocina {
         do {
             System.out.println("\n******* Gestion de Cocina ******");
             System.out.println("1. Ver Trabajadores");
-            System.out.println("2. Contratar Trabajador");
-            System.out.println("3. Despedir Trabajador");
+            System.out.println("2. Incluir Trabajador");
+            System.out.println("3. Excluir Trabajador");
             System.out.println("4. Ver Inventario");
             System.out.println("5. Agregar/Eliminar o Modificar Ingredientes");
             System.out.println("6. Volver al Menu Principal");
