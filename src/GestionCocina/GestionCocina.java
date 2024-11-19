@@ -16,10 +16,11 @@ public class GestionCocina extends javax.swing.JFrame {
     public GestionCocina() {
         
      // Configuración de la ventana
-        setTitle("Gestión de Cocina");
-        setSize(400, 300);
+        setTitle("Gestion de Cocina");
+        setSize(400, 400);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE); // Cerrar solo esta ventana
         setLocationRelativeTo(null); // Centrar la ventana
+        setLayout(new GridLayout(6, 1, 10, 10)); // Diseño en rejilla para los botones
         
         
          // Crear contenedor principal
@@ -28,7 +29,7 @@ public class GestionCocina extends javax.swing.JFrame {
         getContentPane().add(panel);
         
          // Agregar el título
-        JLabel titulo = new JLabel("Gestión de Cocina", JLabel.CENTER);
+        JLabel titulo = new JLabel("Gestion de Cocina", JLabel.CENTER);
         titulo.setFont(new Font("Arial", Font.BOLD, 24));
         panel.add(titulo, BorderLayout.NORTH);
         
@@ -44,22 +45,30 @@ public class GestionCocina extends javax.swing.JFrame {
         JButton btnIncluirTrabajador = new JButton("Incluir Trabajador");
         JButton btnExcluirTrabajador = new JButton("Excluir Trabajador");
         JButton btnModificarInventario = new JButton("Modificar Inventario");
+        JButton btnVerTrabajadores = new JButton("Ver Trabajadores");
+        
         
        btnAdminInventario.setFont(new Font("Arial", Font.PLAIN, 18));
-        btnIncluirTrabajador.setFont(new Font("Arial", Font.PLAIN, 18));
-        btnExcluirTrabajador.setFont(new Font("Arial", Font.PLAIN, 18)); 
-          btnModificarInventario.setFont(new Font("Arial", Font.PLAIN, 18)); 
-        
+       btnIncluirTrabajador.setFont(new Font("Arial", Font.PLAIN, 18));
+       btnExcluirTrabajador.setFont(new Font("Arial", Font.PLAIN, 18)); 
+       btnModificarInventario.setFont(new Font("Arial", Font.PLAIN, 18)); 
+       btnVerTrabajadores.setFont(new Font("Arial", Font.PLAIN, 18));
         
         contenidoPanel.add(btnAdminInventario);
         contenidoPanel.add(btnIncluirTrabajador);
         contenidoPanel.add(btnExcluirTrabajador); 
         contenidoPanel.add(btnModificarInventario); 
+        contenidoPanel.add(btnVerTrabajadores); 
+        
+        
         
       // Botón para regresar al menú principal
-        JButton btnRegresar = new JButton("Regresar al Menú Principal");
+        JButton btnRegresar = new JButton("Regresar al Menu Principal");
         btnRegresar.setFont(new Font("Arial", Font.PLAIN, 14));
         panel.add(btnRegresar, BorderLayout.SOUTH);
+        
+        
+        
         
         
     btnRegresar.addActionListener(new ActionListener() {
