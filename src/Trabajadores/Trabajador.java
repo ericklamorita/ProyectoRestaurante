@@ -19,6 +19,6 @@ public class Trabajador {
 
     @Override
     public String toString() {
-        return "ID: " + id + ", Nombre: " + nombre + " " + apellido1 + " " + apellido2;
+        return "ID " + id + ", Nombre: " + nombre + " " + apellido1 + " " + apellido2;
     }
 }

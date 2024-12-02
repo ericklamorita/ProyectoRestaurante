@@ -31,7 +31,7 @@ public class PedidoService {
             System.out.println("4. Volver al Menu Principal");
             System.out.print("Seleccione una opcion: ");
             opcion = scanner.nextInt();
-            scanner.nextLine(); // Limpiar el buffer
+            scanner.nextLine(); 
 
             switch (opcion) {
                 case 1: 
@@ -54,10 +54,12 @@ public class PedidoService {
 
     // Escoger las mesas, tomar pedido y mostrar tambien los recivos 
     private void escogerMesa() {
+      
         System.out.print("Ingrese el numero de la mesa: ");
+        
         int numeroMesa = scanner.nextInt();
-        scanner.nextLine(); // Limpiar buffer
-
+        scanner.nextLine(); 
+       
         Mesa mesa = buscarMesa(numeroMesa);
         if (mesa != null && mesa.isDisponible()) {
             mesa.ocupar();
@@ -74,7 +76,7 @@ public class PedidoService {
 
                 System.out.print("Precio del platillo: ");
                 double precio = scanner.nextDouble();
-                scanner.nextLine(); // Limpiar buffer
+                scanner.nextLine();
 
                 Platillo platillo = new Platillo(nombrePlatillo, "", precio);
                 pedido.agregarPlatillo(platillo);
@@ -82,7 +84,7 @@ public class PedidoService {
 
             System.out.println("Pedido registrado exitosamente para la mesa " + numeroMesa);
         } else {
-            System.out.println("Mesa no disponible o inexistente.");
+            System.out.println("Mesa no disponible o no existe.");
         }
     }
 
@@ -90,7 +92,7 @@ public class PedidoService {
     private void seleccionarMesa() {
         System.out.print("Ingrese el numero de la mesa: ");
         int numeroMesa = scanner.nextInt();
-        scanner.nextLine(); // Limpiar buffer
+        scanner.nextLine(); 
 
         Mesa mesa = buscarMesa(numeroMesa);
         if (mesa != null && !mesa.isDisponible()) {

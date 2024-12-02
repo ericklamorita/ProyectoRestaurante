@@ -7,14 +7,15 @@ import java.util.List;
 public class GestionTrabajadores {
     
     private List<Trabajador> trabajadores;
-    private int siguienteId; // ID para asignar a cada nuevo trabajador
+    private int siguienteId; 
 
+    //aumenta con cada trabajador nuevo
     public GestionTrabajadores() {
         trabajadores = new ArrayList<>();
-        siguienteId = 1; // Comienza en 1 y aumenta con cada trabajador nuevo
+        siguienteId = 1; 
     }
 
-    // Método para contratar (agregar) un nuevo trabajador
+    // Método para contratar 
     public void contratarTrabajador(String nombre, String apellido1, String apellido2) {
         Trabajador nuevoTrabajador = new Trabajador(siguienteId, nombre, apellido1, apellido2);
         trabajadores.add(nuevoTrabajador);
@@ -22,7 +23,7 @@ public class GestionTrabajadores {
         System.out.println("Trabajador contratado: " + nuevoTrabajador);
     }
 
-    // Método para despedir (eliminar) un trabajador por ID
+    // Método para despedir 
     public void despedirTrabajador(int id) {
         Trabajador trabajadorEncontrado = null;
         for (Trabajador t : trabajadores) {
@@ -40,7 +41,7 @@ public class GestionTrabajadores {
         }
     }
 
-    // Método para mostrar la lista de todos los trabajadores
+    //lista de todos los trabajadores
     public void mostrarTrabajadores() {
         if (trabajadores.isEmpty()) {
             System.out.println("No hay trabajadores en el sistema.");

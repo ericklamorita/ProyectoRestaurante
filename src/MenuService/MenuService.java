@@ -36,7 +36,7 @@ public class MenuService {
         String descripcion = scanner.nextLine();
         System.out.print("Precio del Platillo: ");
         double precio = scanner.nextDouble();
-        scanner.nextLine(); // Consumir nueva línea
+        scanner.nextLine(); 
 
         Platillo nuevoPlatillo = new Platillo(nombre, descripcion, precio);
         menu.add(nuevoPlatillo);

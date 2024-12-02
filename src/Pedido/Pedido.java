@@ -13,7 +13,7 @@ public class Pedido {
         this.numeroMesa = numeroMesa;
     }
 
-    // Getter para obtener el número de la mesa
+    // Getter del número de la mesa
     public int getNumeroMesa() {
         return numeroMesa;
     }

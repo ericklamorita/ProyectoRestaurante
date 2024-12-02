@@ -10,7 +10,7 @@ public class MainMenu {
         Scanner scanner = new Scanner(System.in);
         MenuService menuService = new MenuService();
         Servicio_de_cocina cocinaService = new Servicio_de_cocina();
-        PedidoService pedidoService = new PedidoService(15, menuService); // 15 mesas disponibles
+        PedidoService pedidoService = new PedidoService(15, menuService); 
 
         int opcion;
         do {
