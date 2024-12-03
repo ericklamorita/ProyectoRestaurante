@@ -14,6 +14,7 @@ public class VisualizarPedidos extends javax.swing.JFrame {
 
     public VisualizarPedidos() {
         initComponents();
+        this.setLocationRelativeTo(null);
         this.modelo.addColumn("Numero de Mesa");
         this.modelo.addColumn("Nombre");
         this.modelo.addColumn("Orden");
@@ -44,6 +45,11 @@ public class VisualizarPedidos extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBackground(new java.awt.Color(0, 51, 51));
+
+        jTable1.setBackground(new java.awt.Color(255, 255, 255));
+        jTable1.setBorder(javax.swing.BorderFactory.createCompoundBorder());
+        jTable1.setForeground(new java.awt.Color(0, 0, 0));
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -54,16 +60,26 @@ public class VisualizarPedidos extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
+        btRegresar.setBackground(new java.awt.Color(255, 255, 255));
+        btRegresar.setForeground(new java.awt.Color(0, 0, 0));
         btRegresar.setText("Regresar");
+        btRegresar.setBorder(javax.swing.BorderFactory.createCompoundBorder());
         btRegresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btRegresarActionPerformed(evt);
             }
         });
 
+        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Escoja un numero de mesa a Eliminar");
+        jLabel1.setBorder(javax.swing.BorderFactory.createCompoundBorder());
 
+        btEliminar.setBackground(new java.awt.Color(255, 255, 255));
+        btEliminar.setForeground(new java.awt.Color(0, 0, 0));
         btEliminar.setText("Eliminar");
+        btEliminar.setBorder(javax.swing.BorderFactory.createCompoundBorder());
         btEliminar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btEliminarActionPerformed(evt);
@@ -80,28 +96,27 @@ public class VisualizarPedidos extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 666, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(19, 19, 19)
-                                .addComponent(btRegresar)
-                                .addGap(143, 143, 143)
-                                .addComponent(jLabel1))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(187, 187, 187)
-                                .addComponent(btEliminar)))
+                        .addGap(19, 19, 19)
+                        .addComponent(btRegresar, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(137, 137, 137)
+                        .addComponent(jLabel1)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(308, 308, 308)
+                .addComponent(btEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(17, 17, 17)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btRegresar)
+                    .addComponent(btRegresar, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btEliminar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                .addComponent(btEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );

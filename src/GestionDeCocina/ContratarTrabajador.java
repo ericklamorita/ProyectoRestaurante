@@ -40,13 +40,22 @@ public class ContratarTrabajador extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBackground(new java.awt.Color(0, 51, 51));
+
         jLabel1.setText("Nombre");
 
         jLabel2.setText("Ingrese los datos del trabajador");
+        jLabel2.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+
+        txtNombre.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jLabel3.setText("Primer Apellido");
 
+        txtPrimerApellido.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
         jLabel4.setText("Segundo Apellido");
+
+        txtSegundoApellido.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         btAgregar.setText("Agregar");
 
@@ -108,7 +117,7 @@ public class ContratarTrabajador extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(txtSegundoApellido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 255, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 273, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
